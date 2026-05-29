@@ -15,6 +15,8 @@ struct Vec3 {
     Vec3 operator-()               const { return { -x, -y, -z }; }
 
     Vec3& operator+=(const Vec3& o) { x += o.x; y += o.y; z += o.z; return *this; }
+    Vec3  operator+(float s)        const { return { x + s, y + s, z + s }; }
+    bool  operator==(const Vec3& o) const { return x==o.x && y==o.y && z==o.z; }
 
     float dot(const Vec3& o)   const { return x * o.x + y * o.y + z * o.z; } // 내적
     Vec3  cross(const Vec3& o) const { // 외적

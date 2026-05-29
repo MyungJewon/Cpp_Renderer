@@ -34,9 +34,9 @@ void Rasterizer::DrawTriangle(VertexOut v0, VertexOut v1, VertexOut v2, IShader&
     Vec2 s1 = toScreen(ndc1);
     Vec2 s2 = toScreen(ndc2);
 
-    // Back-face culling: signed area < 0 → back-face
+    // y-down screen space에서 앞면(NDC CCW)은 signed area < 0
     float area = (s1.x - s0.x) * (s2.y - s0.y) - (s1.y - s0.y) * (s2.x - s0.x);
-    if (area <= 0.0f) return;
+    if (area >= 0.0f) return;
 
     // Bounding box clamped to screen
     int minX = (int)std::max(0.0f,       std::floor(std::min({ s0.x, s1.x, s2.x })));
