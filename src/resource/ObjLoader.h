@@ -8,6 +8,7 @@ struct MeshVertex {
     Vec3 pos;
     Vec2 uv;
     Vec3 normal;
+    Vec3 tangent;  // TBN 행렬 구성용, ObjLoader가 자동 계산
 };
 
 struct Mesh {

@@ -9,7 +9,11 @@ set(COMMON_SOURCES
     src/renderer/Framebuffer.cpp
     src/renderer/Rasterizer.cpp
     src/renderer/Pipeline.cpp
+    src/renderer/ShadowMap.cpp
+    src/renderer/ShadowPass.cpp
+    src/renderer/OITBuffer.cpp
     src/resource/ObjLoader.cpp
+    src/resource/Texture.cpp
 )
 
 if(WIN32)

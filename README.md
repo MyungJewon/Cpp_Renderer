@@ -14,11 +14,11 @@
 - [x] Near-plane 클리핑
 - [x] MVP 행렬 파이프라인 (Model / View / Projection)
 - [x] Vertex / Fragment 셰이더 인터페이스
-- [ ] OBJ 메시 로더
-- [ ] Phong 라이팅
-- [ ] TGA 텍스처 매핑
-- [ ] Shadow Map
-- [ ] Normal Map
+- [x] OBJ 메시 로더
+- [x] Phong 라이팅
+- [x] TGA 텍스처 매핑
+- [x] Shadow Map
+- [x] Normal Map
 
 ---
 
@@ -74,8 +74,8 @@ SoftRenderer/
 │   │   └── Pipeline.h/.cpp
 │   ├── window/
 │   │   └── Win32Window.h/.cpp
-│   ├── scene/          (예정)
-│   └── resource/       (예정)
+│   ├── scene/
+│   └── resource/
 ├── CMakeLists.txt
 └── README.md
 ```
@@ -103,5 +103,5 @@ ESC 키로 종료합니다.
 | 화면 출력 | Win32 DIB Section + BitBlt | 외부 의존성 없이 픽셀 직접 제어 |
 | 빌드 시스템 | CMake | 크로스 컴파일러 지원 |
 | 외부 라이브러리 | 없음 | 파이프라인 직접 구현이 핵심 목적 |
-| 모델 포맷 | .obj (예정) | 파싱 단순, 레퍼런스 풍부 |
-| 텍스처 포맷 | .tga (예정) | 헤더 구조가 단순해 직접 파싱 가능 |
+| 모델 포맷 | .obj | 파싱 단순, 레퍼런스 풍부 |
+| 텍스처 포맷 | .tga | 헤더 구조가 단순해 직접 파싱 가능 |

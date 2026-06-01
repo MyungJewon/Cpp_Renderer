@@ -7,9 +7,10 @@
 
 // Data carried from vertex shader to fragment shader
 struct Varying {
-    Vec3 worldPos;
-    Vec3 normal;
-    Vec2 uv;
+    Vec3  worldPos;
+    Vec3  normal;
+    Vec3  tangent;  // Normal Map TBN 구성용
+    Vec2  uv;
     Color color;
 };
 
